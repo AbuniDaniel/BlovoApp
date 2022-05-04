@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     }()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+         super.viewDidLoad()
         view.addSubview(label)
         view.addSubview(emailField)
         view.addSubview(passwordField)
