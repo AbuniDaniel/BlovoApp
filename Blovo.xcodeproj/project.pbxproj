@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31D68AEC2821497A00A038CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31D68AEB2821497A00A038CD /* GoogleService-Info.plist */; };
 		31D9424F282056170059DEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9424E282056170059DEE2 /* AppDelegate.swift */; };
 		31D94251282056170059DEE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D94250282056170059DEE2 /* SceneDelegate.swift */; };
 		31D94253282056180059DEE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D94252282056170059DEE2 /* ViewController.swift */; };
 		31D94256282056180059DEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D94254282056180059DEE2 /* Main.storyboard */; };
 		31D94258282056180059DEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D94257282056180059DEE2 /* Assets.xcassets */; };
 		31D9425B282056180059DEE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D94259282056180059DEE2 /* LaunchScreen.storyboard */; };
+		6ADA8C9F82C690B173457862 /* Pods_Blovo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6D276DB2D7B9A4CA9F3E8E /* Pods_Blovo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B6D276DB2D7B9A4CA9F3E8E /* Pods_Blovo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blovo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D68AEB2821497A00A038CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31D9424B282056170059DEE2 /* Blovo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blovo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D9424E282056170059DEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D94250282056170059DEE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		31D94257282056180059DEE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D9425A282056180059DEE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31D9425C282056180059DEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E84AE4645EC6653D2E7567A /* Pods-Blovo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blovo.release.xcconfig"; path = "Target Support Files/Pods-Blovo/Pods-Blovo.release.xcconfig"; sourceTree = "<group>"; };
+		D6B5411DCF65AB2695AD5B84 /* Pods-Blovo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blovo.debug.xcconfig"; path = "Target Support Files/Pods-Blovo/Pods-Blovo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADA8C9F82C690B173457862 /* Pods_Blovo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11F428E3F4AA230E21D1F989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B6D276DB2D7B9A4CA9F3E8E /* Pods_Blovo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		31D94242282056170059DEE2 = {
 			isa = PBXGroup;
 			children = (
 				31D9424D282056170059DEE2 /* Blovo */,
 				31D9424C282056170059DEE2 /* Products */,
+				429A0348B84A696267C75BA0 /* Pods */,
+				11F428E3F4AA230E21D1F989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +75,7 @@
 			children = (
 				31D9424E282056170059DEE2 /* AppDelegate.swift */,
 				31D94250282056170059DEE2 /* SceneDelegate.swift */,
+				31D68AEB2821497A00A038CD /* GoogleService-Info.plist */,
 				31D94252282056170059DEE2 /* ViewController.swift */,
 				31D94254282056180059DEE2 /* Main.storyboard */,
 				31D94257282056180059DEE2 /* Assets.xcassets */,
@@ -67,6 +85,15 @@
 			path = Blovo;
 			sourceTree = "<group>";
 		};
+		429A0348B84A696267C75BA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5411DCF65AB2695AD5B84 /* Pods-Blovo.debug.xcconfig */,
+				3E84AE4645EC6653D2E7567A /* Pods-Blovo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31D9425F282056180059DEE2 /* Build configuration list for PBXNativeTarget "Blovo" */;
 			buildPhases = (
+				A226F9F163DAA1C8CA8FD49A /* [CP] Check Pods Manifest.lock */,
 				31D94247282056170059DEE2 /* Sources */,
 				31D94248282056170059DEE2 /* Frameworks */,
 				31D94249282056170059DEE2 /* Resources */,
+				8103AB2225A284268F0D5E26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D9425B282056180059DEE2 /* LaunchScreen.storyboard in Resources */,
+				31D68AEC2821497A00A038CD /* GoogleService-Info.plist in Resources */,
 				31D94258282056180059DEE2 /* Assets.xcassets in Resources */,
 				31D94256282056180059DEE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8103AB2225A284268F0D5E26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blovo/Pods-Blovo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blovo/Pods-Blovo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blovo/Pods-Blovo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A226F9F163DAA1C8CA8FD49A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blovo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31D94247282056170059DEE2 /* Sources */ = {
@@ -282,11 +354,14 @@
 		};
 		31D94260282056180059DEE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B5411DCF65AB2695AD5B84 /* Pods-Blovo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQZ64TG95Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Blovo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,6 +376,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = abunidaniel.Blovo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,11 +385,14 @@
 		};
 		31D94261282056180059DEE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E84AE4645EC6653D2E7567A /* Pods-Blovo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQZ64TG95Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Blovo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +407,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = abunidaniel.Blovo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
