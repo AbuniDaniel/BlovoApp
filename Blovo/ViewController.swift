@@ -154,6 +154,14 @@ class ViewController: UIViewController {
         
     }
     
+    func showAccFailed(){
+        let  alertAccFailed = UIAlertController(title: "ERROR", message: "Account creation failed (invalid mail/mail already exists/password too short)", preferredStyle: .alert)
+
+        alertAccFailed.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+
+                self.present(alertAccFailed, animated: true, completion: nil)
+    }
+    
     func showCreateAccount(email: String, password: String) {
         let alert = UIAlertController(title: "Create Account",
                                       message: "Would you like to create an account?",
@@ -166,7 +174,7 @@ class ViewController: UIViewController {
                     return
                 }
                 guard error == nil else{
-                    
+                    strongSelf.showAccFailed()
                     print("Account creation failed")
                     return
                 }
