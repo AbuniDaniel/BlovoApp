@@ -7,9 +7,14 @@
 
 import UIKit
 import FirebaseAuth
+import SafariServices
+import UserNotifications
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var restaurante: UIButton!
+    @IBOutlet weak var video: UIButton!
+    @IBOutlet weak var sitewebbutton: UIButton!
     private let label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -17,6 +22,15 @@ class ViewController: UIViewController {
         label.font = .systemFont(ofSize: 24, weight: .semibold)
         return label
     }()
+    
+    // sfsafari
+    @IBAction func siteweb(_ sender: UIButton) {
+        if let url = URL(string: "https://glovoapp.com/ro/ro/"){
+            let safariVC = SFSafariViewController(url: url)
+            
+            present(safariVC, animated: true, completion: nil)
+        }
+    }
     
     private let emailField: UITextField = {
         let emailField = UITextField()
@@ -66,20 +80,58 @@ class ViewController: UIViewController {
         view.addSubview(emailField)
         view.addSubview(passwordField)
         view.addSubview(button)
+        view.addSubview(signOutButton)
+        signOutButton.isHidden = true
+        
+        video.isHidden = true
+        sitewebbutton.isHidden = true
+        restaurante.isHidden = true
+        
         view.backgroundColor = .systemGreen
         button.addTarget(self, action: #selector(didTapButton) , for: .touchUpInside)
         // Do any additional setup after loading the view.
+        
+        //notifications
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound])
+        {
+            (granted, error) in
+            
+        }
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Asta este o notfificare"
+        content.body = "Te asteptam pe Blovo!"
+        
+        let date = Date().addingTimeInterval(5)
+        
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+        
+        let uuidString = UUID().uuidString
+        
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        center.add(request){ (error) in
+            
+        }
+        
         
         if FirebaseAuth.Auth.auth().currentUser != nil{
             label.isHidden = true
             button.isHidden = true
             emailField.isHidden = true
             passwordField.isHidden = true
-            
-            view.addSubview(signOutButton)
-            signOutButton.frame = CGRect(x: 20, y: 150, width: view.frame.width-40, height: 52)
+            video.isHidden = false
+            sitewebbutton.isHidden = false
+            restaurante.isHidden = false
+            signOutButton.isHidden = false
+            signOutButton.frame = CGRect(x: 20, y: 750, width: view.frame.width-40, height: 52)
             signOutButton.addTarget(self, action: #selector(logOutTapped), for: .touchUpInside)
         }
+        
     }
     
     @objc private func logOutTapped(){
@@ -89,8 +141,11 @@ class ViewController: UIViewController {
             button.isHidden = false
             emailField.isHidden = false
             passwordField.isHidden = false
+            video.isHidden = true
+            sitewebbutton.isHidden = true
+            restaurante.isHidden = true
+            signOutButton.isHidden = true
             
-            signOutButton.removeFromSuperview()
         }
         catch{
             print("An error occurred")
@@ -147,7 +202,10 @@ class ViewController: UIViewController {
             strongSelf.emailField.isHidden = true
             strongSelf.passwordField.isHidden = true
             strongSelf.button.isHidden = true
-            
+            strongSelf.video.isHidden = false
+            strongSelf.sitewebbutton.isHidden = false
+            strongSelf.restaurante.isHidden = false
+            strongSelf.signOutButton.isHidden = false
             strongSelf.emailField.resignFirstResponder()
             strongSelf.passwordField.resignFirstResponder()
         })
@@ -185,7 +243,10 @@ class ViewController: UIViewController {
                 strongSelf.emailField.isHidden = true
                 strongSelf.passwordField.isHidden = true
                 strongSelf.button.isHidden = true
-                
+                strongSelf.video.isHidden = false
+                strongSelf.sitewebbutton.isHidden = false
+                strongSelf.restaurante.isHidden = false
+                strongSelf.signOutButton.isHidden = false
                 strongSelf.emailField.resignFirstResponder()
                 strongSelf.passwordField.resignFirstResponder()
             })

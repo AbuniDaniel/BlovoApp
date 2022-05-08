@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31738411282699EF00AB7FB8 /* ViewControllerRestaurante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31738410282699EF00AB7FB8 /* ViewControllerRestaurante.swift */; };
+		317384172827019000AB7FB8 /* reclama glovo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 317384162827019000AB7FB8 /* reclama glovo.mp4 */; };
+		31738419282701EE00AB7FB8 /* ViewControllerVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31738418282701EE00AB7FB8 /* ViewControllerVideo.swift */; };
+		3173841B2827074300AB7FB8 /* ViewControllerRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3173841A2827074300AB7FB8 /* ViewControllerRestaurant.swift */; };
 		31D68AEC2821497A00A038CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31D68AEB2821497A00A038CD /* GoogleService-Info.plist */; };
 		31D9424F282056170059DEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D9424E282056170059DEE2 /* AppDelegate.swift */; };
 		31D94251282056170059DEE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D94250282056170059DEE2 /* SceneDelegate.swift */; };
@@ -14,11 +18,18 @@
 		31D94256282056180059DEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D94254282056180059DEE2 /* Main.storyboard */; };
 		31D94258282056180059DEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D94257282056180059DEE2 /* Assets.xcassets */; };
 		31D9425B282056180059DEE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D94259282056180059DEE2 /* LaunchScreen.storyboard */; };
+		31FD77852827A6D6008B5776 /* ViewControllerMeniu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD77842827A6D6008B5776 /* ViewControllerMeniu.swift */; };
+		31FD77872827BC62008B5776 /* ViewControllerPozeLocatie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD77862827BC62008B5776 /* ViewControllerPozeLocatie.swift */; };
+		31FD77892827D91B008B5776 /* ViewControllerLocatie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD77882827D91B008B5776 /* ViewControllerLocatie.swift */; };
 		6ADA8C9F82C690B173457862 /* Pods_Blovo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6D276DB2D7B9A4CA9F3E8E /* Pods_Blovo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B6D276DB2D7B9A4CA9F3E8E /* Pods_Blovo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blovo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31738410282699EF00AB7FB8 /* ViewControllerRestaurante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRestaurante.swift; sourceTree = "<group>"; };
+		317384162827019000AB7FB8 /* reclama glovo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "reclama glovo.mp4"; sourceTree = "<group>"; };
+		31738418282701EE00AB7FB8 /* ViewControllerVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVideo.swift; sourceTree = "<group>"; };
+		3173841A2827074300AB7FB8 /* ViewControllerRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRestaurant.swift; sourceTree = "<group>"; };
 		31D68AEB2821497A00A038CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		31D9424B282056170059DEE2 /* Blovo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blovo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D9424E282056170059DEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +39,9 @@
 		31D94257282056180059DEE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D9425A282056180059DEE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31D9425C282056180059DEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FD77842827A6D6008B5776 /* ViewControllerMeniu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMeniu.swift; sourceTree = "<group>"; };
+		31FD77862827BC62008B5776 /* ViewControllerPozeLocatie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPozeLocatie.swift; sourceTree = "<group>"; };
+		31FD77882827D91B008B5776 /* ViewControllerLocatie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLocatie.swift; sourceTree = "<group>"; };
 		3E84AE4645EC6653D2E7567A /* Pods-Blovo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blovo.release.xcconfig"; path = "Target Support Files/Pods-Blovo/Pods-Blovo.release.xcconfig"; sourceTree = "<group>"; };
 		D6B5411DCF65AB2695AD5B84 /* Pods-Blovo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blovo.debug.xcconfig"; path = "Target Support Files/Pods-Blovo/Pods-Blovo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,9 +89,16 @@
 			children = (
 				31D9424E282056170059DEE2 /* AppDelegate.swift */,
 				31D94250282056170059DEE2 /* SceneDelegate.swift */,
+				317384162827019000AB7FB8 /* reclama glovo.mp4 */,
 				31D68AEB2821497A00A038CD /* GoogleService-Info.plist */,
 				31D94252282056170059DEE2 /* ViewController.swift */,
+				31738410282699EF00AB7FB8 /* ViewControllerRestaurante.swift */,
+				31FD77882827D91B008B5776 /* ViewControllerLocatie.swift */,
 				31D94254282056180059DEE2 /* Main.storyboard */,
+				31FD77862827BC62008B5776 /* ViewControllerPozeLocatie.swift */,
+				31FD77842827A6D6008B5776 /* ViewControllerMeniu.swift */,
+				3173841A2827074300AB7FB8 /* ViewControllerRestaurant.swift */,
+				31738418282701EE00AB7FB8 /* ViewControllerVideo.swift */,
 				31D94257282056180059DEE2 /* Assets.xcassets */,
 				31D94259282056180059DEE2 /* LaunchScreen.storyboard */,
 				31D9425C282056180059DEE2 /* Info.plist */,
@@ -158,6 +179,7 @@
 				31D68AEC2821497A00A038CD /* GoogleService-Info.plist in Resources */,
 				31D94258282056180059DEE2 /* Assets.xcassets in Resources */,
 				31D94256282056180059DEE2 /* Main.storyboard in Resources */,
+				317384172827019000AB7FB8 /* reclama glovo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31FD77872827BC62008B5776 /* ViewControllerPozeLocatie.swift in Sources */,
 				31D94253282056180059DEE2 /* ViewController.swift in Sources */,
 				31D9424F282056170059DEE2 /* AppDelegate.swift in Sources */,
+				31FD77892827D91B008B5776 /* ViewControllerLocatie.swift in Sources */,
+				31738419282701EE00AB7FB8 /* ViewControllerVideo.swift in Sources */,
+				3173841B2827074300AB7FB8 /* ViewControllerRestaurant.swift in Sources */,
+				31FD77852827A6D6008B5776 /* ViewControllerMeniu.swift in Sources */,
 				31D94251282056170059DEE2 /* SceneDelegate.swift in Sources */,
+				31738411282699EF00AB7FB8 /* ViewControllerRestaurante.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
